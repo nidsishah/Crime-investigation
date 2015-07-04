@@ -76,7 +76,7 @@ mysql_close($conn);
 else
 {
 ?>
-<h1>CASE FORM</h1>
+<center><h1>CASE FORM</h1></center>
 <form method="post" action="<?php $_PHP_SELF ?>">
 <table width="60%" border="0" cellspacing="15" cellpadding="7">
 

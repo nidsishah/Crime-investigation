@@ -20,7 +20,7 @@ $dbhandle = mysql_connect($hostname, $username, $password)
 
 
 $selected= mysql_select_db("combo",$dbhandle ) 
-  or die("Could not select bookmyshow");
+  or die("Could not select combo");
 
 $s= $_POST["crime"];
 $query="SELECT * 
