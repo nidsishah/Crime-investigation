@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<head>
+    <title>CRIMINAL</title>
+	
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+ 
+    <style type="text/css">
+ 
+        /*** central column on page ***/
+        div#divContainer
+        {
+            max-width: 800px;
+            margin: 0 auto;
+            font-family: Calibri;
+            padding: 0.5em 1em 1em 1em;
+ 
+            /* rounded corners */
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+ 
+            /* add gradient */
+            background-color: #808080;
+            background: -webkit-gradient(linear, left top, left bottom, from(#606060), to(#808080));
+            background: -moz-linear-gradient(top, #606060, #808080);
+ 
+            /* add box shadows */
+            -moz-box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+            -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+        }
+ 
+        h1 {color:#FFE47A; font-size:1.5em;}
+ 
+        /*** sample table to demonstrate CSS3 formatting ***/
+        table.formatHTML5 {
+            width: 100%;
+            border-collapse:collapse;
+            text-align:left;
+            color: #606060;
+        }
+ 
+        /*** table's thead section, head row style ***/
+        table.formatHTML5 thead tr td  {
+            background-color: White;
+            vertical-align:middle;
+            padding: 0.6em;
+            font-size:0.8em;
+        }
+ 
+        /*** table's thead section, coulmns header style ***/
+        table.formatHTML5 thead tr th
+        {
+            padding: 0.5em;
+            /* add gradient */
+            background-color: #808080;
+            background: -webkit-gradient(linear, left top, left bottom, from(#606060), to(#909090));
+            background: -moz-linear-gradient(top, #606060, #909090);
+            color: #dadada;
+        }
+ 
+        /*** table's tbody section, odd rows style ***/
+        table.formatHTML5 tbody tr:nth-child(odd) {
+           background-color: #fafafa;
+        }
+ 
+        /*** hover effect to table's tbody odd rows ***/
+        table.formatHTML5 tbody tr:nth-child(odd):hover
+        {
+            cursor:pointer;
+            /* add gradient */
+            background-color: #808080;
+            background: -webkit-gradient(linear, left top, left bottom, from(#606060), to(#909090));
+            background: -moz-linear-gradient(top, #606060, #909090);
+            color: #dadada;
+        }
+ 
+        /*** table's tbody section, even rows style ***/
+        table.formatHTML5 tbody tr:nth-child(even) {
+            background-color: #efefef;
+        }
+ 
+        /*** hover effect to apply to table's tbody section, even rows ***/
+        table.formatHTML5 tbody tr:nth-child(even):hover
+        {
+            cursor:pointer;
+            /* add gradient */
+            background-color: #808080;
+            background: -webkit-gradient(linear, left top, left bottom, from(#606060), to(#9909090));
+            background: -moz-linear-gradient(top, #606060, #909090);
+            color: #dadada;
+        }
+ 
+       /*** table's tbody section, last row style ***/
+        table.formatHTML5 tbody tr:last-child {
+             border-bottom: solid 1px #404040;
+        }
+ 
+        /*** table's tbody section, separator row pseudo-class ***/
+        table.formatHTML5 tbody tr.separator {
+            /* add gradient */
+            background-color: #808080;
+            background: -webkit-gradient(linear, left top, left bottom, from(#606060), to(#9909090));
+            background: -moz-linear-gradient(top, #606060, #909090);
+            color: #dadada;
+        }
+ 
+        /*** table's td element, all section ***/
+        table.formatHTML5 td {
+           vertical-align:middle;
+           padding: 0.5em;
+        }
+ 
+        /*** table's tfoot section ***/
+        table.formatHTML5 tfoot{
+            text-align:center;
+            color:#303030;
+            text-shadow: 0 1px 1px rgba(255,255,255,0.3);
+        }
+	
+  .jumbotron
+  {
+  
+  text-align: center;
+  background-color: blue;
+  color:white;
+  }
+  h1 {
+    text-shadow: 5px 5px #ff0000;
+}
+  
+    </style>
+ 
+</head>
+<body>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1 align="center" ><img src="logo.jpg" class="img-circle" width="15%" height="10%">  Crime Investigation</h1>      
+        
+    
+  </div>
+
+  <nav class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Crime Investigtion</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>Criminal<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><span class="glyphicon glyphicon-plus"></span>  Add a criminal</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-search"></span>  Find a Criminal</a></li>
+            
+          </ul>
+        </li>
+		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-list"></span> Cases<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><span class="glyphicon glyphicon-plus"></span> Add a Case</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-search"></span> Find a Case</a></li>
+            
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-bullhorn"></span> News</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-warning-sign"></span> Safety Tips</a></li>
+		
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-tasks"></span> See Also<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Inspiration</a></li>
+			<li><a href="#">Mappings</a></li>
+			<li><a href="#">Suspects</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+ <!-- <div class="row">
+    <div class="col-md-3">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="col-md-3"> 
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="col-md-3"> 
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div class="col-md-3"> 
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>-->
+</div>
+
+
+ 
+    <!-- CENTTERED COLUMN ON THE PAGE-->
+    <div id="divContainer">
+ 
+        <h1>CRIMINAL RECORD</h1>
+ 
+        <!-- HTML5 TABLE FORMATTED VIA CSS3-->
+        <table class="formatHTML5" >
+ 
+            <!-- TABLE HEADER-->
+            <thead>
+               <tr><td colspan=5><MARQUEE>CRIMINAL </MARQUEE></td></tr>
+                <tr>
+                    <th>NAME</th><th>CRIME</th><th>DOC</th><th>ROC</th><th>POLICE INVOLVED</th>
+                </tr>
+            </thead>
+ 
+            <!-- TABLE BODY: MAIN CONTENT-->
+            <tbody>
+                <tr>
+                    <td>VANIKA SABHAGANI</td><td>ROBBERRY</td><td>02/02/2015,CHEMBUR</td><td></td><td>Ms.KIRAN ROY</td>
+                </tr>
+                <tr>
+                    <td>PRIYANKA SHAHU</td><td>HALF MURDER CASE</td><td>02/01/2015,GHATKOPAR</td><td></td><td>Ms.NIDHI SHAH</td>
+                 </tr>
+				 <tr>
+                    <td>AKASH MEHRA</td><td>RAPE CASE</td><td>11/11/11,JUHU</td><td></td><td>Ms.NIDHI SHAH</td>
+                 </tr>
+                <tr>
+                    <td>ROHIT MEHTA</td><td>KIDNAPP</td><td>26/11/09,BHAYENDER</td><td></td><td>MR.RAJU JADHAV</td>
+                 </tr>
+				 <tr>
+                    <td>RAKESH ROSHAN</td><td>SMUGGLING</td><td>6/11/12,NERUL</td><td></td><td>MR.RAJU JADHAV</td>
+                 </tr>
+                  
+ 
+            <!-- TABLE FOOTER-->
+            <tfoot>
+                <tr><td colspan="5">Copyright@crimeinvestgigation.in</td></tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

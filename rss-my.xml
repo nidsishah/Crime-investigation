@@ -1,0 +1,75 @@
+<rss version="2.0">
+<channel>
+<title>News</title>
+<link>http://www.bbc.com</link>
+<description>
+News from all over the world.
+</description>
+<pubDate>Sat, 1 March 2015 14:20:24 GMT</pubDate>
+<image>
+    <url>http://www.bbc.com/logo.gif</url>
+   <link>http://www.bbc.com/index.php</link>
+</image>
+<item>
+<title>News from Asia</title>
+<link>http://www.bbc.com/news/asia/</link>
+<description>
+Narendra Modi has urged Sri Lanka and India to act like good neighbours, during the first official visit to Colombo by an Indian PM for 28 years.
+He promised that his neighbours would benefit from India's status as "the new frontier of economic opportunity".
+Analysts say Mr Modi is attempting to counter the increasing influence of China on its island neighbour.
+</description>
+<pubDate>Sat, 2 March 2015 14:20:24 GMT</pubDate>
+</item>
+<item>
+<title>News from Australia</title>
+<link>http://www.bbc.com/news/australia/</link>
+<description>
+Swedish prosecutors have offered to travel to London to question Wikileaks founder Julian Assange over sex assault allegations.
+
+Prosecutors had previously insisted on questioning Mr Assange in Sweden, after seeking his arrest in 2010.
+
+Mr Assange denies the assault claims and has been living at the Ecuadorean embassy in London since 2012.
+
+He fears that if he is sent to Sweden he could then be extradited to the US to face charges over leaking material.
+</description>
+<pubDate>Sat, 2 March 2015 14:20:24 GMT</pubDate>
+</item>
+<item>
+<title>
+News from Health
+</title>
+<link>http://www.bbc.com/news/health/</link>
+<description>
+More than 10,000 people have died in the largest ever outbreak of the virus.
+But a study in the journal Science suggests there could be even more deaths from other diseases because of the devastating impact on the countries' vaccination programmes.
+Experts said an increase in such infections was "likely".
+There have been 24,350 cases of Ebola in Liberia, Guinea and Sierra Leone.
+Many healthcare facilities closed and the fear of Ebola meant people did not show up at those that remained.
+</description>
+<pubDate>Sat, 2 March 2015 14:20:24 GMT</pubDate>
+</item>
+<item>
+<title>News from Science/Environment</title>
+<link>http://www.bbc.com/news/science/</link>
+<description>
+An initiative has been launched to help improve smallholder farmers' access to a wider array of modern, more productive food crop varieties.
+The African Seed Access Index (TASAI) monitors the state of the continent's seed sector and highlights problems that prevent seeds reaching farmers.
+Organisers hope the scheme will shake off "decades of complacent government seed monopolies".
+Uganda, Zimbabwe, South Africa and Kenya featured in the first assessment.</description>
+<pubDate>Sat, 2 March 2015 14:20:24 GMT</pubDate>
+</item>
+<item>
+<title>News from Technology</title>
+<link>http://www.bbc.com/news/technology/</link>
+<description>
+Destiny has been named as best game at 2015's British Academy Game Awards.
+The post-apocalyptic first-person shooter was developed by Bungie. It was the US studio's first release after quitting the Halo series.
+The title attracted mixed reviews, and its relatively bare-bones plot continues to divide gamers.
+The award surprised many in the audience at the London ceremony as it had not won any of the other categories it had been nominated for.
+However, Bungie's skill at crafting alien-slaying gunfights appears to have helped it seize the top prize.
+</description>
+<pubDate>Sat, 2 March 2015 14:20:24 GMT</pubDate>
+</item>
+
+</channel>
+</rss>

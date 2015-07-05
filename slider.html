@@ -1,0 +1,299 @@
+<!--BLOG TAB
+WEBSITE CREDITS
+WINNERS-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>VESIT</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <style>
+  .jumbotron
+  {
+  
+  text-align: center;
+  background-color: blue;
+  color:white;
+  }
+  h1 {
+    text-shadow: 5px 5px #ff0000;
+}
+  </style>
+
+
+
+		
+<style>
+
+div#carousel { 
+  perspective: 1200px; 
+  background: black; 
+  padding-top: 2%;
+  padding-bottom: 2%;  
+  font-size:0; 
+  margin-bottom: 3rem;
+  margin-top:60px;  
+  overflow: hidden; 
+}
+figure#spinner { 
+  transform-style: preserve-3d; 
+  height: 300px; 
+  transform-origin: 50% 50% -500px; 
+  transition: 1s; 
+} 
+figure#spinner img { 
+  width: 40%; max-width: 425px; 
+  position: absolute; left: 30%;
+  transform-origin: 50% 50% -500px;
+  outline:1px solid transparent; 
+}
+figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
+}
+figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
+figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
+figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
+figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
+figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
+div#carousel ~ span { 
+  color: #fff; 
+  margin: 5%; 
+  display: inline-block; 
+  text-decoration: none; 
+  font-size: 2rem; 
+  transition: 0.6s color; 
+  position: relative; 
+  margin-top: -6rem; 
+  border-bottom: none; 
+  line-height: 0; }
+div#carousel ~ span:hover { color: #888; cursor: pointer; }
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: url(images/noise_light-grey.jpg);
+	font-family: 'Helvetica Neue', arial, sans-serif;
+	font-weight: 200;
+}
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 3em;
+	font-weight: 400;
+	margin: 0 0 20px;
+	text-align: center;
+	text-shadow: 1px 1px 0 #fff, 2px 2px 0 #bbb;
+}
+hr {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #fff;
+	margin: 25px 0;
+	clear: both;
+}
+.centered {
+	text-align: center;
+}
+.wrapper {
+	width: 100%;
+	padding: 30px 0;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+ul.grid-nav {
+	list-style: none;
+	font-size: .85em;
+	font-weight: 200;
+	text-align: center;
+}
+ul.grid-nav li {
+	display: inline-block;
+}
+ul.grid-nav li a {
+	display: inline-block;
+	background: #999;
+	color: #fff;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+ul.grid-nav li a:hover {
+	background: #7b0;
+}
+ul.grid-nav li a.active {
+	background: #333;
+}
+.grid-container {
+	display: none;
+}
+/* ----- Image grids ----- */
+ul.rig {
+	list-style: none;
+	font-size: 0px;
+	margin-left: -2.5%; /* should match li left margin */
+}
+ul.rig li {
+	display: inline-block;
+	padding: 10px;
+	margin: 0 0 2.5% 2.5%;
+	background: #fff;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	font-size: 1rem;
+	vertical-align: top;
+	box-shadow: 0 0 5px #ddd;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+ul.rig li img {
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 10px;
+}
+ul.rig li h3 {
+	margin: 0 0 5px;
+}
+ul.rig li p {
+	font-size: .9em;
+	line-height: 1.5em;
+	color: #999;
+}
+/* class for 2 columns */
+ul.rig.columns-2 li {
+	width: 47.5%; /* this value + 2.5 should = 50% */
+}
+/* class for 3 columns */
+ul.rig.columns-3 li {
+	width: 30.83%; /* this value + 2.5 should = 33% */
+}
+/* class for 4 columns */
+ul.rig.columns-4 li {
+	width: 22.5%; /* this value + 2.5 should = 25% */
+}
+
+@media (max-width: 1199px) {
+	.container {
+		width: auto;
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 480px) {
+	ul.grid-nav li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	ul.grid-nav li a {
+		display: block;
+	}
+	ul.rig {
+		margin-left: 0;
+	}
+	ul.rig li {
+		width: 100% !important; /* over-ride all li styles */
+		margin: 0 0 20px;
+	}
+}
+</style>
+<script>
+var angle = 0;
+function galleryspin(sign) { 
+spinner = document.querySelector("#spinner");
+if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
+spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+}
+</script>
+</head>
+<body>
+<div class="container">
+  <div class="jumbotron">
+    <h1 align="center" ><img src="logo.jpg" class="img-circle" width="15%" height="10%">  Crime Investigation</h1>      
+        
+    
+  </div>
+
+  <nav class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Crime Investigation</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>Criminal<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><span class="glyphicon glyphicon-plus"></span>  Add a criminal</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-search"></span>  Find a Criminal</a></li>
+            
+          </ul>
+        </li>
+		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-list"></span> Cases<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><span class="glyphicon glyphicon-plus"></span> Add a Case</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-search"></span> Find a Case</a></li>
+            
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-bullhorn"></span> News</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-warning-sign"></span> Safety Tips</a></li>
+		
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-tasks"></span> See Also<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Inspiration</a></li>
+			<li><a href="#">Mappings</a></li>
+			<li><a href="#">Suspects</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+			<br>
+			<div id=carousel>
+<figure id=spinner>
+<img src="slider1.jpg" alt="" width="400" height="300">
+<img src="slider2.jpg" alt="" width="400" height="300">
+<img src="slider3.jpg" alt="" width="400" height="300">
+<img src="slider4.jpg" alt="" width="400" height="300">
+<img src="p2.jpg" alt="" width="400" height="300">
+<img src="p3.jpg" alt="" width="400" height="300">
+<img src="p4.jpg" alt="" width="400" height="300">
+<img src="p5.jpg" alt="" width="400" height="300">
+</figure>
+</div>
+<span style=float:left class=ss-icon onclick="galleryspin('-')">&lt;</span>
+<span style=float:right class=ss-icon onclick="galleryspin('')">&gt;</span>
+<br><br>
+
+
+
+
+<a href="rssnew.xml">
+   <img src="rss.png">
+</a>
+
+</body>
+</html>
+

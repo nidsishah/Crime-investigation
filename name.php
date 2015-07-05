@@ -1,9 +1,8 @@
 <HTML>
 <BODY>
-<h1>Search criminal by name</h1>
 <form method="post" action="<?php $_PHP_SELF ?>">
-Enter CRIME
-<input type="text" name="crime"><br>
+Enter NAME
+<input type="text" name="name"><br>
 <input type="submit" value="Search">
 </form>
 
@@ -22,10 +21,10 @@ $dbhandle = mysql_connect($hostname, $username, $password)
 $selected= mysql_select_db("combo",$dbhandle ) 
   or die("Could not select bookmyshow");
 
-$s= $_POST["crime"];
+$s= $_POST["name"];
 $query="SELECT * 
 FROM  criminal
-WHERE crime = '".$s."'";
+WHERE name = '".$s."'";
 ECHO $S;
 
 $result = mysql_query($query);

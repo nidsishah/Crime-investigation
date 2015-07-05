@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.animation {
+    width: 200px;
+    height: 170px;
+    background: red;
+    position: relative;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: myfirst;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    /* Standard syntax */
+    animation-name: myfirst;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+.img
+{
+margin-left:15%;
+margin-top:2%;
+
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   {background:red; left:0px; top:0px;}
+    25%  {background:yellow; left:900px; top:0px;}
+    50%  {background:blue; left:900px; top:400px;}
+    75%  {background:green; left:0px; top:400px;}
+    100% {background:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {background:red; left:0px; top:0px;}
+    25%  {background:yellow; left:200px; top:0px;}
+    50%  {background:blue; left:200px; top:200px;}
+    75%  {background:green; left:0px; top:200px;}
+    100% {background:red; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> Police protects our country 24*7*365...!! Salute to their dedication..</p>
+<div class="animation"><img src="pol.jpg" width="150px" height="100px" align="center" style="margin:25px;"></div>
+<div class="img"><img src="slider4.jpg" width="700px" height="200px"></div>
+
+</body>
+</html>

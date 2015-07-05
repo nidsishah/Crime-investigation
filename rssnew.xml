@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>Crime Investigation</title>
+    <link>http://localhost/combo/</link>
+    <description>Investigate more effeciently through Criminal and case information.</description>
+    <pubDate>Wed, 07 Feb 2015 14:20:24 GMT</pubDate>
+    <item>
+    <title>News on Wanted criminals</title>
+    <link>http://localhost/combo/crimetable.html</link>
+    <description>Here, wanted criminals would be seen...if these criminals are seen anywhere then please report to nearby police station as soon as possible.</description>
+     <pubDate>Sat, 11 Dec 15 09:41:06 +0100</pubDate>
+    </item>
+    <item>
+      <title>Runing cases</title>
+      <link>http://localhost/combo/casetable.html</link>
+      <description>These are running cases whose investigation is till going..... </description>
+      <pubDate>Wed, 29 Jul 15 15:56:54  0200</pubDate>
+    </item>
+    <item>
+      <title>Closed cases</title>
+      <link>http://localhost/combo/casetable.html</link>
+      <description>These are cases which are closed due to political reasons, no proper evidence,...... </description>
+      <pubDate>Wed, 09 Jul 15 15:56:50  0200</pubDate>
+    </item>
+   
+       
+  </channel>
+</rss>

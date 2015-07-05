@@ -1,9 +1,8 @@
 <HTML>
 <BODY>
-<h1>Search criminal by name</h1>
 <form method="post" action="<?php $_PHP_SELF ?>">
-Enter CRIME
-<input type="text" name="crime"><br>
+Enter DATE
+<input type="text" name="case_date"><br>
 <input type="submit" value="Search">
 </form>
 
@@ -22,10 +21,8 @@ $dbhandle = mysql_connect($hostname, $username, $password)
 $selected= mysql_select_db("combo",$dbhandle ) 
   or die("Could not select bookmyshow");
 
-$s= $_POST["crime"];
-$query="SELECT * 
-FROM  criminal
-WHERE crime = '".$s."'";
+$s= $_POST["case_date"];
+$query="SELECT * FROM  case1 WHERE case_date = '".$s."' ";
 ECHO $S;
 
 $result = mysql_query($query);
@@ -39,20 +36,24 @@ while($info=mysql_fetch_array($result))
 echo "<tr>";
 print "<th> NAME:</th> <td>".$info[1]."</td></tr>";
 print "<tr>";
-print "<th> CRIME:</th> <td>".$info[2]."</td></tr>";
+print "<th> DATE:</th> <td>".$info[2]."</td></tr>";
 print "<tr>";
-print "<th> DATE:</th> <td>".$info[3]."</td></tr>";
+print "<th> REGISTER BY:</th> <td>".$info[3]."</td></tr>";
 print "<tr>";
-print "<th> STATUS:</th> <td>".$info[4]."</td></tr>";
+print "<th> FILLED BY:</th> <td>".$info[4]."</td></tr>";
 print "<tr>";
-print "<th> ADDRESS:</th> <td>".$info[6]."</td></tr>";
+print "<th> SUSPECTS:</th> <td>".$info[5]."</td></tr>";
 print "<tr>";
-print "<th> PHONE NO:</th> <td>".$info[7]."</td></tr>";
+print "<th> STATUS:</th> <td>".$info[6]."</td></tr>";
 print "<tr>";
-print "<th> BUSINESS:</th> <td>".$info[8]."</td></tr>";
+print "<th> POLICE HEAD:</th> <td>".$info[7]."</td></tr>";
 print "<tr>";
-print "<th> PHOTO:</th> <td><IMG SRC=".$info[9]."></td></tr>";
+print "<th> CRIME:</th> <td>".$info[8]."</td></tr>";
 print "<tr>";
+print "<th> CRIME LOCATION:</th> <td>".$info[9]."</td></tr>";
+print "<tr>";
+print "<th> CASE AFFECTED PEOPLE:</th> <td>".$info[10]."</td></tr>";
+
 
 }
 print "</table>";
